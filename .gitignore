@@ -1,0 +1,48 @@
+# miss type
+1
+
+# C, C++
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+
+# Java
+*.class
+*.swp
+target
+gen
+
+# Visual Studio
+*.user
+*.ncb
+*.suo
+*.scc
+*.idb
+*.exp
+*.dep
+*.ilk
+
+# file
+Thumbs.db
+
+# image
+#*.jpg
+#*.jpeg
+#*.JPG
+#*.JPEG
+
+# Directory
+tmp
+build
+node_modules
+._*
+*.un~
+
+# temporally file
+*.bak
+
+# mac hidden files
+.DS_Store

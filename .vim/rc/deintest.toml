@@ -1,0 +1,9 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+## syntax checking plugins exist for eruby, haml, html, javascript, php, python, ruby and sass.
+[[plugins]]
+repo = 'scrooloose/syntastic'
+hook_add = 'source ~/.vim/rc/plugins/syntastic.rc.vim'
+
+# }}}

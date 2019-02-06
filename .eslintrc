@@ -1,0 +1,82 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": [    
+    "airbnb",
+    // add more generic rulesets here, such as:
+    // 'eslint:recommended',
+    "plugin:vue/essential"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "vue"
+  ],
+  "rules": {
+    "quotes": [
+      2,
+      "single",
+      { "avoidEscape": true }
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "arrow-body-style": ["error", "always"],
+    "dot-notation": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-unresolved": 0,
+    "no-eq-null": 2,
+    "semi": [2, "always"],
+    "strict": [0, "global"],
+    "comma-style": [0],
+    "comma-dangle": ["error", "never"],
+    "consistent-return": [2, { "treatUndefinedAsUnspecified": false }],
+    "func-names": ["error", "never"],
+    "one-var": ["error", { "var": "always", "let": "never", "const": "never" }],
+    "no-multi-spaces": [2, {
+      "exceptions": {
+        "Property": true,
+        "ImportDeclaration": true,
+        "VariableDeclarator": true,
+        "AssignmentExpression": true
+      }
+    }],
+    "no-await-in-loop": 0,
+    "no-continue": 0,
+    "no-bitwise": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-shadow": 0,
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+//    "no-underscore-dangle": ["error", { "allow": ["_cb", "_obj"] }],
+    "no-underscore-dangle": 0,
+    "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+    "key-spacing": [0, { "align": "colon" }],
+    "object-shorthand": ["error", "consistent"],
+    "no-console": 0,
+    "quote-props": ["error", "consistent"],
+    // override/add rules settings here, such as:
+    // "vue/no-unused-vars": "error"
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx"],
+    "import/resolver": {
+      "node" : {
+        "extensions": [".js", ".jsx"],
+        "paths": ["~/.npm/"]
+      }
+    }
+  }
+}
